@@ -105,6 +105,17 @@ A tuple is a collection of objects which ordered and immutable. Tuples are seque
 
 ### Q6: Compute the Euclidean Distance Between Two Series? ###
 ```
+import math
+l1 = [[2,4],[3,6],[7,8]]
+dist = []
+for i in l1:
+    a=(i[0]-5)**2
+    b=(i[1]-8)**2
+    dis = math.sqrt(a+b)
+    dist.append(dis)
+max = max(dist)
+index = dist.index(max)
+l1[index]
 ```
 
 ### Q7: Given an integer n and an integer K, output a list of all of the combination of k numbers chosen from 1 to n. For example, if n=3 and k=2, return [1,2],[1,3],[2,3] ### 
